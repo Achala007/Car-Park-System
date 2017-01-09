@@ -62,25 +62,7 @@ public class DateAndTime {
 		}
 	}
 
-	public void setTime(String tIn) {
-		try {
-			String[] timeArray = (tIn.split("\\:"));
-			if (Integer.parseInt(timeArray[0]) < 25 && Integer.parseInt(timeArray[0]) >= 0) {
-				hour = Integer.parseInt(timeArray[0]);
-			} else {
-				Exception Out = new Exception();
-				throw Out;
-			}
-			if (Integer.parseInt(timeArray[1]) >= 0 && Integer.parseInt(timeArray[1]) < 61) {
-				minute = Integer.parseInt(timeArray[1]);
-			} else {
-				Exception Out = new Exception();
-				throw Out;
-			}
-		} catch (Exception e) {
-			System.err.print("Invalid Time, enter a different time (Hour : Minute ) : ");
-			setDate(sc.next());
-		}
+	
 	}
 
 	public String getDate() {

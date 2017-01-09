@@ -3,7 +3,27 @@ import java.util.Scanner;
 
 public class DateAndTime {
 
-	
+	private int month;
+	private int day;
+	private int hour;
+	private int minute;
+	private int year;
+
+	public int getYear() {
+		return year;
+	}
+
+	public int getMonth() {
+		return month;
+	}
+
+	public int getDay() {
+		return day;
+	}
+
+	public int getHour() {
+		return hour;
+	}
 
 	public int getMinute() {
 		return minute;

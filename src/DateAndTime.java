@@ -71,8 +71,7 @@ public class DateAndTime {
 				Exception Out = new Exception();
 				throw Out;
 			}
-			if (Integer.parseInt(timeArray[1]) >= 0 && Integer.parseInt(timeArray[1]) < 61) {
-				minute = Integer.parseInt(timeArray[1]);
+			= Integer.parseInt(timeArray[1]);
 			} else {
 				Exception Out = new Exception();
 				throw Out;

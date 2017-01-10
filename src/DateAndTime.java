@@ -83,11 +83,5 @@ public class DateAndTime {
 		}
 	}
 
-	public String getDate() {
-		return year + "-" + month + "-" + day;
-	}
 
-	public String getTime() {
-		return hour + ":" + minute;
-	}
 }

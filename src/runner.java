@@ -21,14 +21,7 @@ public class runner {
 			System.out.print("H   Print History\n");
 			System.out.print("Q   Quit\n\n");
 			System.out.print("Enter the Input : ");
-			System.out.print("A   Add a Vehicle\n");
-			System.out.print("D   Delete a Vehicle\n");
-			System.out.print("P   Print a Parked vehicle list\n");
-			System.out.print("S   Print the Percentages\n");
-			System.out.print("M   Print Maximium & Newest Vehicle\n");
-			System.out.print("H   Print History\n");
-			System.out.print("Q   Quit\n\n");
-			System.out.print("Enter the Input : ");
+			
 			in = sc.next();
 
 		} while (!(in.equalsIgnoreCase("A") || in.equalsIgnoreCase("D") || in.equalsIgnoreCase("P")

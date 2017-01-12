@@ -24,9 +24,7 @@ public class runner {
 			
 			in = sc.next();
 
-		} while (!(in.equalsIgnoreCase("A") || in.equalsIgnoreCase("D") || in.equalsIgnoreCase("P")
-				|| in.equalsIgnoreCase("S") || in.equalsIgnoreCase("M") || in.equalsIgnoreCase("H")));
-		in = in.toLowerCase();
+		} 
 		switch (in) {
 		case "a":
 			obj.addVehicle();

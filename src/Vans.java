@@ -3,28 +3,7 @@ public class Vans extends Vehicle {
 
 	private String cargoVolume;
 
-	public String getCargoVolume() {
-		return cargoVolume;
-	}
-
-	public void setCargoVolume(String vol) {
-		this.cargoVolume = vol;
-	}
-
-	@Override
-	public String getIpPlate() {
-		return idPlate;
-	}
-
-	@Override
-	public void setIdPlate(String idPlate) {
-		this.idPlate = idPlate;
-	}
-
-	@Override
-	public String getBrand() {
-		return brand;
-	}
+	
 
 	@Override
 	public void setBrand(String brand) {

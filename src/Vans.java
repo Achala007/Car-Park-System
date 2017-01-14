@@ -21,7 +21,10 @@ public class Vans extends Vehicle {
 		this.idPlate = idPlate;
 	}
 
-	
+	@Override
+	public String getBrand() {
+		return brand;
+	}
 
 	@Override
 	public void setBrand(String brand) {

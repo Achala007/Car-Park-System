@@ -49,9 +49,7 @@ public class Vans extends Vehicle {
 
 	}
 
-	@Override
-	void setEntryTime(String time) {
-		objEntry.setTime(time);
+
 
 	}
 

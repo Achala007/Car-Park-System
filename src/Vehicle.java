@@ -17,6 +17,7 @@ public abstract class Vehicle {
 
 	abstract void setLeaveDate(String date);
 
+	abstract void setLeaveTime(String time);
 
 	abstract String getEntryDate();
 

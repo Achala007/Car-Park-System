@@ -39,7 +39,15 @@ public abstract class Vehicle {
 
 	abstract String getType();
 
-	p
+	public int totalPay() {
+		int totalHours = 0;
+		int totalAmmount = 0;
+		totalHours = ((objLeave.getYear() - objEntry.getYear()) * 365 * 24)
+				+ ((objLeave.getMonth() - objEntry.getMonth()) * 30 * 24)
+				+ ((objLeave.getDay() - objEntry.getDay()) * 24) + ((objLeave.getHour() - objEntry.getHour()));
+		if ((objLeave.getMinute() - objEntry.getMinute()) > 0) {
+			totalHours++;
+		}
 
 		System.out.println("\tTotal Hours :" + totalHours);
 

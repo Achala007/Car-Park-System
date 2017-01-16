@@ -28,18 +28,7 @@ public class WestminsterCarParkManager implements carParkManager {
 		if ((vehicle) < 20) {
 			switch (input) {
 			case "car":
-				objCar.setType("CAR");
-				System.out.print("Enter the Id Plate number : ");
-				objCar.setIdPlate(sc.next());
-				System.out.print("Enter the Brand of the Car : ");
-				objCar.setBrand(sc.next());
-				System.out.print("Enter the date of the entry? (Year-Month-Day) : ");
-				objCar.setEntryDate(sc.next());
-				System.out.print("Enter the time of the entry? (Hour:Minute) : ");
-				objCar.setEntryTime(sc.next());
-				System.out.print("Enter the number of doors : ");
-				objCar.setNoOfDoors(sc.next());
-				System.out.print("Enter the colour of the car : ");
+				
 				objCar.setColor(sc.next());
 				vehicles.add(objCar);
 				parkDate = objCar.getEntryDate();

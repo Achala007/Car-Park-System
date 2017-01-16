@@ -14,8 +14,7 @@ public class WestminsterCarParkManager implements carParkManager {
 		Cars objCar = new Cars();
 		Vans objVan = new Vans();
 		Motorbikes objBike = new Motorbikes();
-		String parkDate = null;
-		String details = null;
+		
 		SpecificHistory objHis = new SpecificHistory();
 		String input = "";
 		int vehicle = 0;

@@ -237,20 +237,4 @@ public abstract class Vehicle {
 			// i the remainder is less than 7 it checks weather its greater
 			// than 3
 			if ((totalHours % 24) > 3) {
-				totalAmmount += 9 + ((totalHours % 24) - 3) * 4;
-			} else {
-				totalAmmount += ((totalHours % 24)) * 3;
-			}
-		}
-
-		return totalAmmount;
-	}
-
-	public int totalTime() {
-		return ((((objStat.getYear() - objEntry.getYear()) * 365) + (objStat.getDay() - objEntry.getDay())
-				+ ((objStat.getMonth() - objEntry.getMonth()) * 30) * 24) + (objStat.getHour() - objEntry.getHour()))
-				* 60 + (objStat.getMinute() - objEntry.getMinute());
-
-	}
-
-}
+		

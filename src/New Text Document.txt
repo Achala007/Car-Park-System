@@ -461,7 +461,29 @@ public class WestminsterCarParkManager implements carParkManager {
 	}
 
 }
+s objBike = new Motorbikes();
+		String parkDate = null;
+		String details = null;
+		SpecificHistory objHis = new SpecificHistory();
+		String input = "";
+		int vehicle = 0;
+		do {
+			System.out.print("Enter the Vehicle type (Car/Van/Bike)  : ");
+			input = sc.next();
+			input = input.toLowerCase();
+		} while (!(input.equalsIgnoreCase("car") || input.equalsIgnoreCase("van") || input.equalsIgnoreCase("bike")));
 
+		if ((vehicle) < 20) {
+			switch (input) {
+			case "car":
+				objCar.setType("CAR");
+				System.out.print("Enter the Id Plate number : ");
+				objCar.setIdPlate(sc.next());
+				System.out.print("Enter the Brand of the Car : ");
+				objCar.setBrand(sc.next());
+				System.out.print("Enter the date of the entry? (Year-Month-Day) : ");
+				objCar.setEntryDate(sc.next());
+				System.out.print("Enter the t
 			// i the remainder is less than 7 it checks weather its greater
 			// than 3
 			if ((totalHours % 24) > 3) {

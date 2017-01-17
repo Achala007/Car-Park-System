@@ -19,12 +19,12 @@ public class WestminsterCarParkManager implements carParkManager {
 		SpecificHistory objHis = new SpecificHistory();
 		String input = "";
 		int vehicle = 0;
-		input.toLowerCase();
-		} while (!(input.equalsIgnoreCase("car") || input.equalsIgnoreCase("van") || input.equalsIgnoreCase("bike")));
-do {
+		do {
 			System.out.print("Enter the Vehicle type (Car/Van/Bike)  : ");
 			input = sc.next();
-			input = 
+			input = input.toLowerCase();
+		} while (!(input.equalsIgnoreCase("car") || input.equalsIgnoreCase("van") || input.equalsIgnoreCase("bike")));
+
 		if ((vehicle) < 20) {
 			switch (input) {
 			case "car":

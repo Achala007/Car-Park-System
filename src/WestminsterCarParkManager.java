@@ -86,13 +86,7 @@ public class WestminsterCarParkManager implements carParkManager {
 				break;
 			}
 
-			if (parkDate != null) {
-				if (HistorySegment.get(parkDate) == null) {
-					objHis.add(details);
-					HistorySegment.put(parkDate, objHis);
-				} else {
-					HistorySegment.get(parkDate).add(details);
-				}
+			
 			}
 		}
 	}

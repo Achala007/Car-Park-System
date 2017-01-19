@@ -185,7 +185,9 @@ public class WestminsterCarParkManager implements carParkManager {
 				carCount++;
 			} else if (objVehicle.getType().equals("VAN")) {
 				vanCount++;
-			} 
+			} else if (objVehicle.getType().equals("BIKE")) {
+				bikeCount++;
+			}
 		}
 		System.out.println("Cars : " + ((carCount * 1.00 / (carCount + vanCount + bikeCount)) * 100) + "    Van : "
 				+ ((vanCount * 1.00 / (carCount + vanCount + bikeCount)) * 100) + "    Bike : "

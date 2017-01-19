@@ -196,5 +196,15 @@ public class WestminsterCarParkManager implements carParkManager {
 	}
 
 	@Override
-	p
+	public void History() {
+		DateAndTime objdateIn = new DateAndTime();
+		System.out.println("Enter the specific date to display the history log : ");
+		objdateIn.setDate(sc.next());
+		if (HistorySegment.get(objdateIn.getDate()) != null) {
+			HistorySegment.get(objdateIn.getDate()).printLine();
+		} else {
+			System.out.println("No Vehicle were Parked on that date");
+		}
+	}
+
 }

@@ -148,25 +148,7 @@ public class WestminsterCarParkManager implements carParkManager {
 		}
 	}
 
-	public void MaxANDMin() {
-		if (vehicles.size() > 0) {
-			System.out.println("Specify the date you need");
-			String currentDate = sc.next();
-			System.out.println("Specify the time you need");
-			String currentTime = sc.next();
-			DateAndTime objd = new DateAndTime();
-			objd.setDate(currentDate);
-			objd.setTime(currentTime);
-			int maxIndex = -1;
-			int max = 0;
-			for (int x = 0; x < vehicles.size(); x++) {
-				vehicles.get(x).setStatDate(objd.getDate());
-				vehicles.get(x).setStatTime(objd.getTime());
-				if (vehicles.get(x).totalTime() > max) {
-					maxIndex = x;
-					max = vehicles.get(x).totalTime();
-				}
-			}
+	
 			if (maxIndex != -1) {
 				System.out.println("................................................................");
 				System.out.println("The vehicle that parked for the longest time is : ");
@@ -203,9 +185,7 @@ public class WestminsterCarParkManager implements carParkManager {
 				carCount++;
 			} else if (objVehicle.getType().equals("VAN")) {
 				vanCount++;
-			} else if (objVehicle.getType().equals("BIKE")) {
-				bikeCount++;
-			}
+			} 
 		}
 		System.out.println("Cars : " + ((carCount * 1.00 / (carCount + vanCount + bikeCount)) * 100) + "    Van : "
 				+ ((vanCount * 1.00 / (carCount + vanCount + bikeCount)) * 100) + "    Bike : "

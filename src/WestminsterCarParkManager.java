@@ -159,7 +159,16 @@ public class WestminsterCarParkManager implements carParkManager {
 				System.out.println("................................................................");
 			} else {
 				System.out.println("No Vehicles is availble at the car park");
-			}m.out.println("No Vehicles is availble at the car park");
+			}
+			System.out.println("................................................................");
+			System.out.println("The last entered vehicle is : ");
+			System.out.println("\tId Plate : " + vehicles.get((vehicles.size() - 1)).getIpPlate());
+			System.out.println("\tBrand : " + vehicles.get((vehicles.size() - 1)).getBrand());
+			System.out.println("\tEntry Time : " + vehicles.get((vehicles.size() - 1)).getEntryDate() + " @ "
+					+ vehicles.get((vehicles.size() - 1)).getEntryTime());
+			System.out.println("................................................................");
+		} else {
+			System.out.println("No Vehicles is availble at the car park");
 		}
 
 	}

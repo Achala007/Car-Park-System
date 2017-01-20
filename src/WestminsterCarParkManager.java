@@ -192,7 +192,7 @@ public class WestminsterCarParkManager implements carParkManager {
 		System.out.println("Cars : " + ((carCount * 1.00 / (carCount + vanCount + bikeCount)) * 100) + "    Van : "
 				+ ((vanCount * 1.00 / (carCount + vanCount + bikeCount)) * 100) + "    Bike : "
 				+ ((bikeCount * 1.00 / (carCount + vanCount + bikeCount)) * 100));
-		System.out.println(".................................................................");
+		
 	}
 
 	@Override
@@ -205,6 +205,7 @@ public class WestminsterCarParkManager implements carParkManager {
 		} else {
 			System.out.println("No Vehicle were Parked on that date");
 		}
+		System.out.println(".................................................................");
 	}
 
 }

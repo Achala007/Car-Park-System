@@ -179,7 +179,7 @@ public class WestminsterCarParkManager implements carParkManager {
 		int vanCount = 0;
 		int bikeCount = 0;
 		System.out.println("\t\tStatistics \n");
-		System.out.println("................................................................");
+		System.out.println(".................................................................");
 		for (Vehicle objVehicle : vehicles) {
 			if (objVehicle.getType().equals("CAR")) {
 				carCount++;
@@ -192,7 +192,7 @@ public class WestminsterCarParkManager implements carParkManager {
 		System.out.println("Cars : " + ((carCount * 1.00 / (carCount + vanCount + bikeCount)) * 100) + "    Van : "
 				+ ((vanCount * 1.00 / (carCount + vanCount + bikeCount)) * 100) + "    Bike : "
 				+ ((bikeCount * 1.00 / (carCount + vanCount + bikeCount)) * 100));
-		System.out.println("................................................................");
+		System.out.println(".................................................................");
 	}
 
 	@Override

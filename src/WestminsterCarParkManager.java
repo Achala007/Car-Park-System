@@ -134,7 +134,14 @@ public class WestminsterCarParkManager implements carParkManager {
 
 	public void List() {
 		if (vehicles.size() > 0) {
-			
+			for (Vehicle rot : vehicles) {
+				System.out.println("................................................................");
+				System.out.println("Id plate : " + rot.getIpPlate());
+				System.out.println("Type : " + rot.type);
+				System.out.println("Brand : " + rot.brand);
+				System.out.println("Entry Time : " + rot.getEntryDate() + " at " + rot.getEntryTime());
+				System.out.println("................................................................");
+			}
 
 		} else {
 			System.out.println("No Vehicles is availble at the car park");

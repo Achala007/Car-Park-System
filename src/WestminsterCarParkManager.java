@@ -97,15 +97,7 @@ public class WestminsterCarParkManager implements carParkManager {
 		}
 	}
 
-	public void deleteVehicle() {
-		System.out.print("Enter the id plate of the vehicle to be removed : ");
-		String search = sc.next();
-		int index = -1;
-		for (int x = 0; x < vehicles.size(); x++) {
-			if (vehicles.get(x).getIpPlate().equalsIgnoreCase(search)) {
-				index = x;
-				break;
-			}
+	p
 		}
 		if (index != -1) {
 			System.out.print("Enter the departed Date (year-month-date ) : ");

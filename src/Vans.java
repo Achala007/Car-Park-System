@@ -3,7 +3,9 @@ public class Vans extends Vehicle {
 
 	private String cargoVolume;
 
-	
+	public String getCargoVolume() {
+		return cargoVolume;
+	}
 
 	public void setCargoVolume(String vol) {
 		this.cargoVolume = vol;

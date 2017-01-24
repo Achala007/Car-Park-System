@@ -37,21 +37,6 @@ public class Vans extends Vehicle {
 
 	}
 
-	@Override
-	String getType() {
-		// TODO Auto-generated method stub
-		return type;
-	}
-
-	@Override
-	void setEntryDate(String date) {
-		objEntry.setDate(date);
-
-	}
-
-	@Override
-	void setEntryTime(String time) {
-		objEntry.setTime(time);
 
 	}
 

@@ -100,10 +100,6 @@ public class Vans extends Vehicle {
 		// TODO Auto-generated method stub
 		return objLeave.getTime();
 	}
-	/*@Override
-	String getLeaveTime() {
-		// TODO Auto-generated method stub
-		return objLeave.getTime();
-	}*/
+	
 
 }

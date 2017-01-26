@@ -4,13 +4,7 @@ public class Cars extends Vehicle {
 	private String noOfDoors;
 	private String color;
 
-	public String getNoOfDoors() {
-		return noOfDoors;
-	}
-
-	public void setNoOfDoors(String noOfDoors) {
-		this.noOfDoors = noOfDoors;
-	}
+	
 
 	public String getColor() {
 		return color;

@@ -70,7 +70,17 @@ public class Cars extends Vehicle {
 
 	}
 
+	@Override
+	void setStatTime(String time) {
+		objStat.setTime(time);
+
+	}
 	
+	@Override
+	void setLeaveDate(String date) {
+		objLeave.setDate(date);
+
+	}
 
 	@Override
 	void setLeaveTime(String time) {

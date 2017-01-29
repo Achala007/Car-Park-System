@@ -83,7 +83,19 @@ public class Cars extends Vehicle {
 	}
 
 	@Override
-	void setLeaveTim
+	void setLeaveTime(String time) {
+		objLeave.setTime(time);
+
+	}
+
+	@Override
+	String getEntryDate() {
+		// TODO Auto-generated method stub
+		return objEntry.getDate();
+	}
+
+	@Override
+	String getEntryTime() {
 		// TODO Auto-generated method stub
 		return objEntry.getTime();
 	}
